@@ -1,8 +1,8 @@
 *** Settings ***
 Library     AppiumLibrary
+Resource    ../Resources/Coco_keywords.robot
 
-
-*** Keywords ***
+*** Variables ***
 
 
 *** Test Cases ***
