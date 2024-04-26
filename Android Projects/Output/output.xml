@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20240425 16:27:47.305" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20240426 10:10:47.293" rpa="false" schemaversion="3">
 <suite id="s1" name="Start-Session" source="C:\Users\newaj\PycharmProjects\Mobile-Automation-Projects-using-Robot-Framework\Android Projects\TestCases\Start-Session.robot">
 <test id="s1-t1" name="Open_Application" line="9">
 <kw name="Open Application" library="AppiumLibrary">
@@ -7,8 +7,6 @@
 <arg>platformName=Android</arg>
 <arg>platformVersion=11</arg>
 <arg>deviceName=HA1HSDDT</arg>
-<arg>appPackage=com.savethechildren.coco.coco</arg>
-<arg>appActivity=com.savethechildren.coco.coco.MainActivity</arg>
 <arg>automationName=UiAutomator2</arg>
 <doc>Opens a new application to given Appium server.
 Capabilities of appium server, Android and iOS,
@@ -17,19 +15,128 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<msg timestamp="20240425 16:27:47.626" level="TRACE">Arguments: [ 'http://localhost:4723' | platformName='Android' | platformVersion='11' | deviceName='HA1HSDDT' | appPackage='com.savethechildren.coco.coco' | appActivity='com.savethechildren.coco.coco.MainActivity' | automationName='UiAutomator2' ]</msg>
-<msg timestamp="20240425 16:27:47.627" level="DEBUG">POST http://localhost:4723/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:platformVersion": "11", "appium:deviceName": "HA1HSDDT", "appium:appPackage": "com.savethechildren.coco.coco", "appium:appActivity": "com.savethechildren.coco.coco.MainActivity", "appium:automationName": "UiAutomator2"}}}</msg>
-<msg timestamp="20240425 16:27:47.640" level="DEBUG">Starting new HTTP connection (1): localhost:4723</msg>
-<msg timestamp="20240425 16:27:56.928" level="DEBUG">http://localhost:4723 "POST /session HTTP/1.1" 200 960</msg>
-<msg timestamp="20240425 16:27:56.928" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"platformName":"Android","platformVersion":"11","deviceName":"HA1HSDDT","appPackage":"com.savethechildren.coco.coco","appActivity":"com.savethechildren.coco.coco.MainActivity","automationName":"UiAutomator2","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","platformVersion":"11","deviceName":"HA1HSDDT","appPackage":"com.savethechildren.coco.coco","appActivity":"com.savethechildren.coco.coco.MainActivity","automationName":"UiAutomator2"},"deviceUDID":"HA1HSDDT","pixelRatio":"1","statBarHeight":24,"viewportRect":{"left":0,"top":24,"width":600,"height":1000},"deviceApiLevel":30,"deviceManufacturer":"LENOVO","deviceModel":"Lenovo TB-7306F","deviceScreenSize":"600x1024","deviceScreenDensity":160},"sessionId":"dbb6f58f-b8d6-4c21-aec3-dd7523434d5d"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '960', 'ETag': 'W/"3c0-KQWjeALhJH2oZhgunk3MD13V/oE"', 'Date': 'Thu, 25 Apr 2024 10:27:56 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
-<msg timestamp="20240425 16:27:56.928" level="DEBUG">Finished Request</msg>
-<msg timestamp="20240425 16:27:56.930" level="DEBUG">Opened application with session id dbb6f58f-b8d6-4c21-aec3-dd7523434d5d</msg>
-<msg timestamp="20240425 16:27:56.930" level="TRACE">Return: 1</msg>
-<status status="PASS" starttime="20240425 16:27:47.625" endtime="20240425 16:27:56.930"/>
+<msg timestamp="20240426 10:10:47.498" level="TRACE">Arguments: [ 'http://localhost:4723' | platformName='Android' | platformVersion='11' | deviceName='HA1HSDDT' | automationName='UiAutomator2' ]</msg>
+<msg timestamp="20240426 10:10:47.498" level="DEBUG">POST http://localhost:4723/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"platformName": "Android", "appium:platformVersion": "11", "appium:deviceName": "HA1HSDDT", "appium:automationName": "UiAutomator2"}}}</msg>
+<msg timestamp="20240426 10:10:47.521" level="DEBUG">Starting new HTTP connection (1): localhost:4723</msg>
+<msg timestamp="20240426 10:10:54.729" level="DEBUG">http://localhost:4723 "POST /session HTTP/1.1" 200 752</msg>
+<msg timestamp="20240426 10:10:54.729" level="DEBUG">Remote response: status=200 | data={"value":{"capabilities":{"platformName":"Android","platformVersion":"11","deviceName":"HA1HSDDT","automationName":"UiAutomator2","platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","platformVersion":"11","deviceName":"HA1HSDDT","automationName":"UiAutomator2"},"deviceUDID":"HA1HSDDT","pixelRatio":"1","statBarHeight":24,"viewportRect":{"left":0,"top":24,"width":600,"height":1000},"deviceApiLevel":30,"deviceManufacturer":"LENOVO","deviceModel":"Lenovo TB-7306F","deviceScreenSize":"600x1024","deviceScreenDensity":160},"sessionId":"d2b18330-44d1-4ccb-beda-c595208d0e7c"}} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '752', 'ETag': 'W/"2f0-quh5zFhhIB0KMNZNo9vvCdBpgiI"', 'Date': 'Fri, 26 Apr 2024 04:10:54 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:10:54.729" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:10:54.731" level="DEBUG">Opened application with session id d2b18330-44d1-4ccb-beda-c595208d0e7c</msg>
+<msg timestamp="20240426 10:10:54.731" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20240426 10:10:47.498" endtime="20240426 10:10:54.731"/>
 </kw>
-<status status="PASS" starttime="20240425 16:27:47.624" endtime="20240425 16:27:56.931"/>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_app}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240426 10:10:54.733" level="TRACE">Arguments: [ "//android.widget.TextView[@content-desc='COCO']" ]</msg>
+<msg timestamp="20240426 10:10:54.733" level="INFO">Clicking element '//android.widget.TextView[@content-desc='COCO']'.</msg>
+<msg timestamp="20240426 10:10:54.733" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements {"using": "xpath", "value": "//android.widget.TextView[@content-desc='COCO']"}</msg>
+<msg timestamp="20240426 10:10:55.945" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20240426 10:10:55.951" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-036c-ffff-ffff00000f5e","ELEMENT":"00000000-0000-036c-ffff-ffff00000f5e"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-dLKobC7imRHXuL3Z9lICL/JtUO4"', 'Date': 'Fri, 26 Apr 2024 04:10:55 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:10:55.951" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:10:55.951" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/element/00000000-0000-036c-ffff-ffff00000f5e/click {"id": "00000000-0000-036c-ffff-ffff00000f5e"}</msg>
+<msg timestamp="20240426 10:10:56.091" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/element/00000000-0000-036c-ffff-ffff00000f5e/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20240426 10:10:56.092" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Fri, 26 Apr 2024 04:10:56 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:10:56.092" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:10:56.092" level="INFO">xpath criteria: //android.widget.TextView[@content-desc='COCO']</msg>
+<msg timestamp="20240426 10:10:56.092" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240426 10:10:54.731" endtime="20240426 10:10:56.092"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240426 10:10:56.093" level="TRACE">Arguments: [ '5 seconds' ]</msg>
+<msg timestamp="20240426 10:11:01.094" level="INFO">Slept 5 seconds</msg>
+<msg timestamp="20240426 10:11:01.094" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240426 10:10:56.092" endtime="20240426 10:11:01.094"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${session}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<msg timestamp="20240426 10:11:01.094" level="TRACE">Arguments: [ "//android.widget.ImageView[@content-desc='Session']" ]</msg>
+<msg timestamp="20240426 10:11:01.094" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements {"using": "xpath", "value": "//android.widget.ImageView[@content-desc='Session']"}</msg>
+<msg timestamp="20240426 10:11:01.188" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20240426 10:11:01.188" level="DEBUG">Remote response: status=200 | data={"value":[]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '12', 'ETag': 'W/"c-ct3goOI+b+kRZv2R9j2fTtMXwkk"', 'Date': 'Fri, 26 Apr 2024 04:11:01 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:11:01.188" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:11:01.401" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements {"using": "xpath", "value": "//android.widget.ImageView[@content-desc='Session']"}</msg>
+<msg timestamp="20240426 10:11:02.860" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20240426 10:11:02.860" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0374-0000-000a00000004","ELEMENT":"00000000-0000-0374-0000-000a00000004"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-udPbzYr+gmXMG7fL1ThHoCdnSxA"', 'Date': 'Fri, 26 Apr 2024 04:11:02 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:11:02.860" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:11:02.860" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc='Session']
+xpath criteria: //android.widget.ImageView[@content-desc='Session']</msg>
+<msg timestamp="20240426 10:11:02.860" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240426 10:11:01.094" endtime="20240426 10:11:02.860"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${session}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240426 10:11:02.860" level="TRACE">Arguments: [ "//android.widget.ImageView[@content-desc='Session']" ]</msg>
+<msg timestamp="20240426 10:11:02.860" level="INFO">Clicking element '//android.widget.ImageView[@content-desc='Session']'.</msg>
+<msg timestamp="20240426 10:11:02.860" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements {"using": "xpath", "value": "//android.widget.ImageView[@content-desc='Session']"}</msg>
+<msg timestamp="20240426 10:11:03.001" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20240426 10:11:03.001" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0374-0000-000a00000004","ELEMENT":"00000000-0000-0374-0000-000a00000004"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-udPbzYr+gmXMG7fL1ThHoCdnSxA"', 'Date': 'Fri, 26 Apr 2024 04:11:02 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:11:03.001" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:11:03.001" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/element/00000000-0000-0374-0000-000a00000004/click {"id": "00000000-0000-0374-0000-000a00000004"}</msg>
+<msg timestamp="20240426 10:11:08.578" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/element/00000000-0000-0374-0000-000a00000004/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20240426 10:11:08.578" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Fri, 26 Apr 2024 04:11:08 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:11:08.578" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:11:08.578" level="INFO">xpath criteria: //android.widget.ImageView[@content-desc='Session']</msg>
+<msg timestamp="20240426 10:11:08.578" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240426 10:11:02.860" endtime="20240426 10:11:08.578"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240426 10:11:08.581" level="TRACE">Arguments: [ '3 seconds' ]</msg>
+<msg timestamp="20240426 10:11:11.588" level="INFO">Slept 3 seconds</msg>
+<msg timestamp="20240426 10:11:11.588" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240426 10:11:08.578" endtime="20240426 10:11:11.588"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${btn_skip}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240426 10:11:11.588" level="TRACE">Arguments: [ "//android.widget.Button[@content-desc='Skip the tutorial']" ]</msg>
+<msg timestamp="20240426 10:11:11.588" level="INFO">Clicking element '//android.widget.Button[@content-desc='Skip the tutorial']'.</msg>
+<msg timestamp="20240426 10:11:11.588" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements {"using": "xpath", "value": "//android.widget.Button[@content-desc='Skip the tutorial']"}</msg>
+<msg timestamp="20240426 10:11:11.729" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20240426 10:11:11.732" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0374-0000-001d00000004","ELEMENT":"00000000-0000-0374-0000-001d00000004"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-WAhA1UvIes1ugcUyBsN8DjZED+4"', 'Date': 'Fri, 26 Apr 2024 04:11:11 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:11:11.732" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:11:11.732" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/element/00000000-0000-0374-0000-001d00000004/click {"id": "00000000-0000-0374-0000-001d00000004"}</msg>
+<msg timestamp="20240426 10:11:12.601" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/element/00000000-0000-0374-0000-001d00000004/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20240426 10:11:12.601" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Fri, 26 Apr 2024 04:11:12 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:11:12.601" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:11:12.601" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Skip the tutorial']</msg>
+<msg timestamp="20240426 10:11:12.601" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240426 10:11:11.588" endtime="20240426 10:11:12.601"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2 Seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240426 10:11:12.601" level="TRACE">Arguments: [ '2 Seconds' ]</msg>
+<msg timestamp="20240426 10:11:14.602" level="INFO">Slept 2 seconds</msg>
+<msg timestamp="20240426 10:11:14.602" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240426 10:11:12.601" endtime="20240426 10:11:14.602"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${startsession}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20240426 10:11:14.602" level="TRACE">Arguments: [ "//android.widget.Button[@content-desc='Start session']" ]</msg>
+<msg timestamp="20240426 10:11:14.602" level="INFO">Clicking element '//android.widget.Button[@content-desc='Start session']'.</msg>
+<msg timestamp="20240426 10:11:14.602" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements {"using": "xpath", "value": "//android.widget.Button[@content-desc='Start session']"}</msg>
+<msg timestamp="20240426 10:11:14.743" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20240426 10:11:14.743" level="DEBUG">Remote response: status=200 | data={"value":[{"element-6066-11e4-a52e-4f735466cecf":"00000000-0000-0374-0000-002800000004","ELEMENT":"00000000-0000-0374-0000-002800000004"}]} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '139', 'ETag': 'W/"8b-9AgZd6E1GRE3Hktnkmk6wI4Vsjs"', 'Date': 'Fri, 26 Apr 2024 04:11:14 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:11:14.743" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:11:14.743" level="DEBUG">POST http://localhost:4723/session/d2b18330-44d1-4ccb-beda-c595208d0e7c/element/00000000-0000-0374-0000-002800000004/click {"id": "00000000-0000-0374-0000-002800000004"}</msg>
+<msg timestamp="20240426 10:11:14.822" level="DEBUG">http://localhost:4723 "POST /session/d2b18330-44d1-4ccb-beda-c595208d0e7c/element/00000000-0000-0374-0000-002800000004/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20240426 10:11:14.823" level="DEBUG">Remote response: status=200 | data={"value":null} | headers=HTTPHeaderDict({'X-Powered-By': 'Express', 'Vary': 'X-HTTP-Method-Override', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '14', 'ETag': 'W/"e-9/1BuKMgFObM1mWJm+YjxtXJnUM"', 'Date': 'Fri, 26 Apr 2024 04:11:14 GMT', 'Connection': 'keep-alive', 'Keep-Alive': 'timeout=600'})</msg>
+<msg timestamp="20240426 10:11:14.823" level="DEBUG">Finished Request</msg>
+<msg timestamp="20240426 10:11:14.823" level="INFO">xpath criteria: //android.widget.Button[@content-desc='Start session']</msg>
+<msg timestamp="20240426 10:11:14.823" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20240426 10:11:14.602" endtime="20240426 10:11:14.823"/>
+</kw>
+<status status="PASS" starttime="20240426 10:10:47.498" endtime="20240426 10:11:14.823"/>
 </test>
-<status status="PASS" starttime="20240425 16:27:47.307" endtime="20240425 16:27:56.932"/>
+<status status="PASS" starttime="20240426 10:10:47.293" endtime="20240426 10:11:14.826"/>
 </suite>
 <statistics>
 <total>
