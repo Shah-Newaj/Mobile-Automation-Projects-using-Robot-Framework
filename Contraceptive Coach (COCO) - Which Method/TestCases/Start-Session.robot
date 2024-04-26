@@ -1,6 +1,6 @@
 *** Settings ***
 Library     AppiumLibrary
-Resource    ../Resources/Coco_keywords.robot
+Resource    ../Resources/CoCo_keywords.robot
 
 *** Variables ***
 
